@@ -1,0 +1,20 @@
+
+exclude = [
+    '.github',
+    '__pycache__',
+    '.venv'
+]
+extend = "./pyproject.toml"
+
+line-length = 50
+
+lint.select = [
+    "E",  # pycodestyle errors
+    "F",  # pyflakes errors
+    "W",  # pycodestyle warnings
+    "B",  # flake8-bugbear errors
+    "I",  # isort errors
+    "C",  # McCabe complexity checker
+]
+lint.ignore = ["E501", "F403", "F401"]
+
