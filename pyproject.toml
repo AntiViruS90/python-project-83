@@ -18,6 +18,7 @@ requests = "^2.32.3"
 responses = "^0.25.3"
 validators = "^0.34.0"
 celery = "^5.4.0"
+ruff = "^0.8.1"
 
 
 [tool.poetry.group.dev.dependencies]

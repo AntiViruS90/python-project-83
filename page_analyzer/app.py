@@ -1,5 +1,6 @@
 import os
 import requests
+
 from dotenv import load_dotenv
 from urllib.parse import urlparse
 from page_analyzer.url_validator import validate
