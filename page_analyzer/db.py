@@ -96,12 +96,12 @@ class UrlRepository:
         query = """
             SELECT id,
                    status_code,
-                   COALESCE(h1, '') as h1, 
-                   COALESCE(title, '') as title, 
-                   COALESCE(description, '') as description, 
-                   created_at::text 
-            FROM url_checks 
-            WHERE url_id = %s 
+                   COALESCE(h1, '') as h1,
+                   COALESCE(title, '') as title,
+                   COALESCE(description, '') as description,
+                   created_at::text
+            FROM url_checks
+            WHERE url_id = %s
             ORDER BY id DESC
         """
         all_checks = self.fetch_all(query, (url_id, ))
